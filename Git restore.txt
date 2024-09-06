@@ -1,0 +1,2 @@
+git restore <file_name> is used t undo changes in working tree( unstaged changes)
+git restore --staged <file_name> is used to unstage 

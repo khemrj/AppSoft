@@ -1,0 +1,15 @@
+git add 
+It adds new files and modified files.
+It does not automatically stage deleted files.
+the . referes to CURRENT DIRECTORY so it will not include files outside this directory in the staging area.
+
+
+		git status --short
+Note: Short status flags are:
+
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
+
+git command -help -  See all the available options for the specific command

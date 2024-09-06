@@ -1,0 +1,6 @@
+Git uses a system called reference log, or simply "reflog," to keep track of modifications to the branches' tips. A reference, often known as a "ref," is a pointer to a commit or branch that many Git commands accept as a parameter. git checkout, git reset, and git merge are examples of some common git commands that accept refs as parameters.
+
+			By default, reflogs keep track of each HEAD position throughout the last 90 days. Furthermore, the reflog history is exclusive to the repository and is not accessible remotely.
+
+
+Reflogs are stored in specific directories under the local repository's .git directory. These git reflog directories can be found at .git/logs/refs/heads/., .git/logs/HEAD, and also .git/logs/refs/stash if the git stash has been used on the repository.

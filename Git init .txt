@@ -1,0 +1,11 @@
+Aside from the .git directory, in the root directory of the project, an existing project remains unaltered (unlike SVN, Git doesn't require a .git subdirectory in every subdirectory)
+
+
+>>>Internally, git clone first calls git init to create a new repository.
+
+git init --bare <directory>
+Initialize an empty Git repository, but omit the working directory. Shared repositories should always be created with the --bare flag (see discussion below)
+
+A bare repository is a Git repository that is typically used as a centralized place for collaboration in a team.
+
+>>>>Since it does not have a working directory, it is not intended for direct file modification. It is mostly used as a remote repository to which users can push their changes and from which they can pull updates.

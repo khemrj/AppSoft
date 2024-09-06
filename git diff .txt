@@ -1,0 +1,16 @@
+Git diff
+Track the changes that have not been staged: $ git diff
+
+Track the changes that have staged but not committed:
+$ git diff --staged
+
+Display the modification on each line of a file:
+$ git blame <file name>
+
+git diff <branch1>..<branch2>
+
+git diff main..feature/login
+This command will show you the changes that exist in feature/login but not in main.
+
+
+git diff --name-only  toDelete..toDelete1

@@ -1,0 +1,20 @@
+>>>>he term alias is synonymous with a shortcut.
+>>>>Aliases are used to create shorter commands that map to longer commands. Aliases enable more efficient workflows by requiring fewer keystrokes to execute a command.
+
+Aliases are created through the use of the git config command
+
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+
+A common Git pattern is to remove recently added files from the staging area. This is achieved by leveraging options to the git reset command. A new alias can be created to encapsulate this behavior and create a new alias-command-keyword which is easy to remember:
+
+git config --global alias.unstage 'reset HEAD --'
+Aliases can be created through two primary methods:
+/.git/config
+
+The config files will respect an [alias] section that looks like:
+
+[alias]
+ co = checkout

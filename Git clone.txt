@@ -1,0 +1,20 @@
+Git makes no distinction between the working copy and the central repository—they're all full-fledged Git repositories.
+>>>means that in Git, every repository (whether it's on your local machine or on a central server) is complete and self-sufficient, containing all the information needed to track a project’s entire history.
+
+
+
+Every Git repository (whether it’s on your laptop or a server) has:
+
+All the commits, including the full history of changes.
+All the branches.
+All the tags, logs, and other metadata
+
+As a convenience, cloning automatically creates a remote connection called "origin" pointing back to the original repository. This makes it very easy to interact with a central repository. This automatic connection is established by creating Git refs to the remote branch heads under refs/remotes/origin and by initializing remote.origin.url and remote.origin.fetch configuration variables.
+
+>>>>git clone -b <branch-name> <repository-url> to clone from a specific branch<<
+
+
+
+Cloning a single branch doesn't reduce the size of the clone. It still downloads the full history of the entire repository. If you want to clone only the specific branch and reduce the amount of data transferred, you can add the --single-branch option:
+
+git clone -b <branch-name> --single-branch <repository-url>
