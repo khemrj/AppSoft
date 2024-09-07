@@ -1,0 +1,4 @@
+		The git commit command captures a snapshot of the project's currently staged changes.
+		git commit command to capture the state of a project at that point in time.
+git commit --amend
+This option adds another level of functionality to the commit command. Passing this option will modify the last commit. Instead of creating a new commit, staged changes will be added to the previous commit. This command will open up the system's configured text editor and prompt to change the previously specified commit message.
