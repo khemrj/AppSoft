@@ -4,7 +4,7 @@
 Aliases are created through the use of the git config command
 
 $ git config --global alias.co checkout
-$ git config --global alias.br branch
+$ git config --global alias.br branch .
 $ git config --global alias.ci commit
 $ git config --global alias.st status
 
@@ -18,3 +18,5 @@ The config files will respect an [alias] section that looks like:
 
 [alias]
  co = checkout
+			to get alias value:  git config --global --get alias.cm
+			to get all alias      :git config --global --unset-all alias.cm
